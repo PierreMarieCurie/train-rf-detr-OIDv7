@@ -1,0 +1,13 @@
+# Models
+*.pth
+*.onnx
+
+# Annotation files
+*.csv
+
+# Data
+dataset/
+
+# Others
+__pycache__/
+downloader.py
