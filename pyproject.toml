@@ -1,0 +1,12 @@
+[project]
+name = "train-rf-detr-openimages"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.9.13"
+dependencies = [
+    "tqdm==4.67.1",
+    "boto3==1.38.36",
+    "pillow==11.2.1",
+    "rfdetr==1.1.0"
+]

@@ -1,3 +1,16 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*.lock
+.ipynb_checkpoints
+
+# Virtual environments
+.venv
+
 # Models
 *.pth
 *.onnx
@@ -9,5 +22,5 @@
 dataset/
 
 # Others
-__pycache__/
 downloader.py
+results/

@@ -1,4 +1,11 @@
-https://storage.googleapis.com/openimages/v6/oidv6-train-annotations-bbox.csv
-https://storage.googleapis.com/openimages/v5/validation-annotations-bbox.csv
-https://storage.googleapis.com/openimages/v5/test-annotations-bbox.csv
-https://storage.googleapis.com/openimages/v7/oidv7-class-descriptions-boxable.csv
+# OIDv7 train annotation file
+train,https://storage.googleapis.com/openimages/v6/oidv6-train-annotations-bbox.csv
+
+# OIDv7 validation annotation file
+valid,https://storage.googleapis.com/openimages/v5/validation-annotations-bbox.csv
+
+# OIDv7 test annotation file
+test,https://storage.googleapis.com/openimages/v5/test-annotations-bbox.csv
+
+# Relation between names and ids for OIDv7 labels
+class,https://storage.googleapis.com/openimages/v7/oidv7-class-descriptions-boxable.csv
