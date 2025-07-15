@@ -59,7 +59,7 @@ def extract_OIDv7_data(csv_path, labels):
         reader = csv.DictReader(csvfile)
         filename = os.path.basename(urlparse(csv_path).path)
         
-        for row in tqdm(reader, total=total_lines, desc=f"Processing {filename}"):
+        for row in tqdm(reader, total=total_lines, desc=f"Searching images in {filename}"):
             
             if row['LabelName'] in labels:                    
                 imageID = row['ImageID']

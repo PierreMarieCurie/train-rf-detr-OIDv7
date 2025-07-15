@@ -20,6 +20,7 @@ wheels/
 
 # Data
 dataset/
+dataset_old/
 
 # Others
 downloader.py
