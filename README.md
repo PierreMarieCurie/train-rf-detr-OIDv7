@@ -11,9 +11,9 @@ It includes:
 - 🗃️ Automatic conversion of Open Images to COCO format
 - ⚙️ Configurable training parameters from CLI
 
-## Requirements
+## 📦 Requirements
 
-- `uv` (UltraViolet) environment manager. If not, just run (macOS and Linux):
+- `uv` (Python package and project manager). If not, just run (on macOS and Linux):
 
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -27,11 +27,11 @@ uv python install 3.9.13
 
 > Check [Astral documentation](https://docs.astral.sh/uv/getting-started/installation) if you need alternative installation methods.
 
-## Usage
+## 🚀 Usage
 
 ### Quickstart
 
-**First, select your target class(es) from the 601 available in Open Images V7**. View the set of boxable classes as a **hierarchy** [here](https://storage.googleapis.com/openimages/2018_04/bbox_labels_600_hierarchy_visualizer/circle.html), or **explore the dataset visually** using the [Open Images Bounding Boxes Explorer](https://storage.googleapis.com/openimages/web/visualizer/index.html?type=detection).
+First, **select your target class(es)** from the 601 available in Open Images V7. View the set of boxable classes as a **hierarchy** [here](https://storage.googleapis.com/openimages/2018_04/bbox_labels_600_hierarchy_visualizer/circle.html), or **explore the dataset visually** using the [Open Images Bounding Boxes Explorer](https://storage.googleapis.com/openimages/web/visualizer/index.html?type=detection).
 
 For example, to fine-tune RF-DETR on **"Snail"** and **"Plate"** classes from Open Images V7:
 
