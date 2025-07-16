@@ -7,8 +7,8 @@ DEFAULT_DATASET_FOLDER = "dataset"
 DEFAULT_CSV_FOLDER = "OIDv7_csv"
 DEFAULT_EPOCHS = 10
 DEFAULT_LEARNING_RATE = 1e-4
-DEFAULT_BATCH_SIZE = 4
-DEFAULT_GRAD_ACCUM_STEPS = 4
+DEFAULT_BATCH_SIZE = 8
+DEFAULT_GRAD_ACCUM_STEPS = 1
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Fine-tune RF-DETR using OIDv7 data")
