@@ -24,7 +24,8 @@ def main():
         batch_size=args.batch_size,
         grad_accum_steps=args.grad_accum_steps,
         lr=args.learning_rate,
-        output_dir=args.result_folder
+        output_dir=args.result_folder,
+        tensorboard=True
     )
 
 if __name__ == "__main__":
