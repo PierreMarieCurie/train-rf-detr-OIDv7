@@ -17,10 +17,10 @@ Feel free to share any feedback, bugs, or improvement ideas!
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-- Python 3.8+. If not, just run:
+- Python 3.10+. If not, just run:
 
 ```bash
-uv python install 3.9.13
+uv python install 3.10.18
 ```
 
 > Check [Astral documentation](https://docs.astral.sh/uv/getting-started/installation) if you need alternative installation methods.
