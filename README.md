@@ -7,6 +7,8 @@
   <img src="assets/illustration2.png" alt="Image 2" width="45%" />
 </p>
 
+Feel free to share any feedback, bugs, or improvement ideas!
+
 ## 📦 Requirements
 
 - `uv` (Python package and project manager). If not, just run (on macOS and Linux):
