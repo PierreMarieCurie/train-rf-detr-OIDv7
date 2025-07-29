@@ -1,14 +1,16 @@
 import argparse
 import os
 from datetime import datetime
+from .supervision import AVAILABLE_MODELS
 
 DEFAULT_MANIFEST_PATH = "csv_manifest.txt"
 DEFAULT_DATASET_FOLDER = "dataset"
 DEFAULT_CSV_FOLDER = "OIDv7_csv"
-DEFAULT_EPOCHS = 10
+DEFAULT_EPOCHS = 20
 DEFAULT_LEARNING_RATE = 1e-4
 DEFAULT_BATCH_SIZE = 8
 DEFAULT_GRAD_ACCUM_STEPS = 1
+DEFAULT_MODEL = "base"
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Fine-tune RF-DETR using OIDv7 data")
@@ -20,7 +22,15 @@ def parse_args():
         "--target-classes",
         nargs="+",
         required=True,
-        help="List of target classes (e.g., snail plate)"
+        help="List of target classes (e.g., tiger cheetah)"
+    )
+    
+    training_group.add_argument(
+        "--model",
+        type=str,
+        choices=["nano", "small", "medium", "base", "large"],
+        default=DEFAULT_MODEL,
+        help=f"Select model size. Default: {DEFAULT_MODEL}. Available: {AVAILABLE_MODELS}"
     )
     
     training_group.add_argument(
@@ -49,6 +59,12 @@ def parse_args():
         type=int,
         default=DEFAULT_GRAD_ACCUM_STEPS,
         help=f"Grad accumulation steps (default: {DEFAULT_GRAD_ACCUM_STEPS})"
+    )
+    
+    training_group.add_argument(
+        "--early-stopping",
+        action="store_true",
+        help=f"Early stopping (add --early-stopping to enable it)"
     )
     
     # Dataset args

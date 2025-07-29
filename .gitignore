@@ -1,4 +1,4 @@
-# Python-generated files
+# Python-generated files and environments
 __pycache__/
 *.py[oc]
 build/
@@ -7,20 +7,15 @@ wheels/
 *.egg-info
 *.lock
 .ipynb_checkpoints
-
-# Virtual environments
 .venv
 
 # Models
 *.pth
 *.onnx
 
-# Annotation files
-*.csv
-
-# Data
+# Dataset (images and annotations)
 dataset/
-dataset_old/
+*.csv
 
 # Others
 downloader.py
