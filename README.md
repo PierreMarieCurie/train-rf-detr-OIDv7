@@ -31,6 +31,13 @@ uv python install 3.10.18
 
 First, **select your target class(es)** from the 601 available in Open Images V7. View the set of boxable classes as a hierarchy [here](https://storage.googleapis.com/openimages/2018_04/bbox_labels_600_hierarchy_visualizer/circle.html), or explore the dataset visually using the [Open Images Bounding Boxes Explorer](https://storage.googleapis.com/openimages/web/visualizer/index.html?type=detection).
 
+Clone the repository and navigate into it:
+
+```bash
+git clone --depth 1 https://github.com/PierreMarieCurie/train-rf-detr-OIDv7.git
+cd train-rf-detr-OIDv7/
+```
+
 For example, to fine-tune RF-DETR on **Tiger** and **Cheetah** classes from Open Images V7:
 
 ```bash
