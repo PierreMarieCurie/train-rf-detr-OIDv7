@@ -133,4 +133,4 @@ Also, RF-DETR is licensed under a [Apache 2.0](https://www.apache.org/licenses/L
 
 - This project builds on [RF-DETR](https://github.com/roboflow/rf-detr), a state-of-the-art, open-source object detection model released by [Roboflow](https://roboflow.com/).
 
-- This project uses [uv](https://github.com/astral-sh/uv).
+- This project uses [uv](https://github.com/astral-sh/uv) by [Astral](https://docs.astral.sh/).
